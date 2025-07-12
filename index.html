@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnout Calculator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A responsive burnout calculator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body" class="body">
+    <header id="header" class="header">
+        <h1 id="main-title" class="main-title">🌿 Burnout Calculator</h1>
+        <p id="subtitle" class="subtitle">A calm check-in to help you reflect and reset</p>
+    </header>
+    <main id="main" class="main">
+        <form id="burnout-form" class="burnout-form">
+            <label for="hrs-worked" id="label-hrs-worked" class="form-label">Hours Worked / Week</label>
+            <input type="number" id="hrs-worked" name="hrs-worked" min="0" max="60" required class="form-input">
+            <label for="study-hours" id="label-study-hours" class="form-label">Study Hours / Week</label>
+            <input type="number" id="study-hours" name="study-hours" min="0" max="60" required class="form-input">
+            <label for="sleep-hours" id="label-sleep-hours" class="form-label">Sleep (Hours / Night)</label>
+            <input type="number" id="sleep-hours" name="sleep-hours" min="0" max="20" required class="form-input">
+            <label for="meals" id="label-meals" class="form-label">Meals per Day</label>
+            <input type="number" id="meals" name="meals" min="0" max="10" required class="form-input">
+            <label for="stress-level" id="label-stress-level" class="form-label">Stress Level (1-5)</label>
+            <input type="number" id="stress-level" name="stress-level" min="1" max="5" required class="form-input">
+            <div class="form-buttons" id="form-buttons">
+                <button type="submit" id="calculate-btn" class="form-button calculate-button">Calculate</button>
+                <button type="reset" id="reset-btn" class="form-button reset-button">Reset</button>
+            </div>
+        </form>
+        <section class="results-section" id="results-section">
+            <p>Results will appear here</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
